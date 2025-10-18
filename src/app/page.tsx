@@ -1,103 +1,369 @@
-import Image from "next/image";
+"use client";
+
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div
+      style={{
+        height: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        overflow: "hidden",
+      }}
+    >
+      {/* Header Navigation */}
+      <header
+        className="animate-fadeInUp"
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          padding: "1rem 2rem",
+          backgroundColor: "rgba(255, 255, 255, 0.95)",
+          backdropFilter: "blur(10px)",
+          borderBottom: "1px solid rgba(12, 83, 103, 0.1)",
+        }}
+      >
+        <div
+          style={{
+            fontSize: "1.5rem",
+            fontWeight: "700",
+            color: "#0C5367",
+          }}
+        >
+          Med
+          <span
+            style={{
+              color: "#E16308",
+              position: "relative",
+              display: "inline-block",
+              marginLeft: "0.25rem",
+            }}
+          >
+            <span
+              className="animate-obfuscate"
+              style={{ position: "absolute", top: 0, left: 0 }}
+            >
+              Disha
+            </span>
+            <span
+              className="animate-obfuscate-hindi"
+              style={{ position: "absolute", top: 0, left: 0 }}
+            >
+              दिशा
+            </span>
+            <span style={{ visibility: "hidden" }}>Disha</span>
+          </span>
+        </div>
+        <div style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
+          <button
+            className="btn-secondary animate-shimmer"
+            style={{
+              fontSize: "1rem",
+              padding: "0.75rem 1.5rem",
+            }}
+          >
+            Book a Demo
+          </button>
+          <Link
+            href="/page1"
+            style={{
+              fontSize: "1rem",
+              padding: "0.75rem 1.5rem",
+              textDecoration: "none",
+              background: "linear-gradient(135deg, #E16308 0%, #ff7a1a 100%)",
+              color: "white",
+              fontWeight: "600",
+              borderRadius: "2rem",
+              transition: "all 0.3s ease",
+              boxShadow:
+                "0 8px 25px rgba(225, 99, 8, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 0 rgba(0, 0, 0, 0.1)",
+              position: "relative",
+              overflow: "hidden",
+              border: "none",
+              cursor: "pointer",
+              textAlign: "center",
+              display: "inline-block",
+            }}
+            onMouseOver={(e) => {
+              e.currentTarget.style.transform = "translateY(-2px)";
+              e.currentTarget.style.boxShadow =
+                "0 12px 35px rgba(225, 99, 8, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.4), inset 0 -1px 0 rgba(0, 0, 0, 0.1)";
+            }}
+            onMouseOut={(e) => {
+              e.currentTarget.style.transform = "translateY(0)";
+              e.currentTarget.style.boxShadow =
+                "0 8px 25px rgba(225, 99, 8, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 0 rgba(0, 0, 0, 0.1)";
+            }}
+          >
+            Get Started
+          </Link>
+        </div>
+      </header>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+      {/* Main Content - Centered */}
+      <main
+        style={{
+          flex: "1",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          padding: "2rem",
+          textAlign: "center",
+        }}
+      >
+        {/* Large MedDisha Title */}
+        <div
+          className="animate-fadeInUp"
+          style={{ marginBottom: "3rem", textAlign: "center" }}
+        >
+          <h1
+            style={{
+              fontSize: "5rem",
+              fontWeight: "900",
+              color: "white",
+              marginBottom: "1rem",
+              lineHeight: "1",
+              textShadow: "0 4px 8px rgba(0,0,0,0.3)",
+              letterSpacing: "-0.02em",
+              textAlign: "center",
+            }}
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            Med
+            <span
+              style={{
+                color: "#E16308",
+                position: "relative",
+                display: "inline-block",
+                marginLeft: "0.5rem",
+                minWidth: "5rem",
+                textAlign: "left",
+              }}
+            >
+              <span
+                className="animate-obfuscate"
+                style={{ position: "absolute", top: 0, left: 0, width: "100%" }}
+              >
+                Disha
+              </span>
+              <span
+                className="animate-obfuscate-hindi"
+                style={{ position: "absolute", top: 0, left: 0, width: "100%" }}
+              >
+                दिशा
+              </span>
+              <span style={{ visibility: "hidden" }}>Disha</span>
+            </span>
+          </h1>
+          <p
+            style={{
+              fontSize: "1.5rem",
+              color: "white",
+              fontWeight: "300",
+              textShadow: "0 2px 4px rgba(0,0,0,0.2)",
+              textAlign: "center",
+              marginBottom: "1rem",
+            }}
           >
-            Read our docs
-          </a>
+            Medical transparency platform for patients
+          </p>
+        </div>
+
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: "4rem",
+            maxWidth: "60rem",
+            width: "100%",
+            justifyContent: "center",
+          }}
+        >
+          {/* Left Side - Content */}
+          <div
+            className="animate-fadeInLeft"
+            style={{ flex: "1", minWidth: "0", textAlign: "center" }}
+          >
+            <h2
+              style={{
+                fontSize: "2.5rem",
+                fontWeight: "700",
+                color: "white",
+                marginBottom: "1rem",
+                lineHeight: "1.2",
+                textShadow: "0 2px 4px rgba(0,0,0,0.2)",
+                textAlign: "center",
+              }}
+            >
+              Current medical routine not cutting it?
+            </h2>
+            <p
+              style={{
+                color: "white",
+                lineHeight: "1.6",
+                fontSize: "1.125rem",
+                marginBottom: "2rem",
+                textShadow: "0 1px 2px rgba(0,0,0,0.2)",
+              }}
+            >
+              Clinical trials, experimental treatments, and cutting-edge
+              therapies. We help you get into them faster with a clear, cheap,
+              and doable plan. Your medical journey, your choice.
+            </p>
+
+            {/* Key Points - One Line */}
+            <div
+              className="animate-fadeInUp"
+              style={{
+                animationDelay: "0.2s",
+                display: "flex",
+                alignItems: "center",
+                gap: "2rem",
+                marginBottom: "2rem",
+                flexWrap: "wrap",
+                justifyContent: "center",
+              }}
+            >
+              <div
+                style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}
+              >
+                <div
+                  style={{
+                    width: "1.5rem",
+                    height: "1.5rem",
+                    background:
+                      "linear-gradient(135deg, #E16308 0%, #ff7a1a 100%)",
+                    borderRadius: "50%",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    boxShadow: "0 2px 8px rgba(225, 99, 8, 0.3)",
+                  }}
+                >
+                  <svg
+                    style={{
+                      width: "0.75rem",
+                      height: "0.75rem",
+                      color: "white",
+                    }}
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={3}
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                </div>
+                <span
+                  style={{
+                    color: "white",
+                    fontSize: "1rem",
+                    fontWeight: "500",
+                  }}
+                >
+                  Clinical Trials
+                </span>
+              </div>
+
+              <div
+                style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}
+              >
+                <div
+                  style={{
+                    width: "1.5rem",
+                    height: "1.5rem",
+                    background:
+                      "linear-gradient(135deg, #0C5367 0%, #1a6b7a 100%)",
+                    borderRadius: "50%",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    boxShadow: "0 2px 8px rgba(12, 83, 103, 0.3)",
+                  }}
+                >
+                  <svg
+                    style={{
+                      width: "0.75rem",
+                      height: "0.75rem",
+                      color: "white",
+                    }}
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M13 10V3L4 14h7v7l9-11h-7z"
+                    />
+                  </svg>
+                </div>
+                <span
+                  style={{
+                    color: "white",
+                    fontSize: "1rem",
+                    fontWeight: "500",
+                  }}
+                >
+                  Fast Access
+                </span>
+              </div>
+
+              <div
+                style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}
+              >
+                <div
+                  style={{
+                    width: "1.5rem",
+                    height: "1.5rem",
+                    background:
+                      "linear-gradient(135deg, #E16308 0%, #0C5367 100%)",
+                    borderRadius: "50%",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    boxShadow: "0 2px 8px rgba(225, 99, 8, 0.3)",
+                  }}
+                >
+                  <svg
+                    style={{
+                      width: "0.75rem",
+                      height: "0.75rem",
+                      color: "white",
+                    }}
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </div>
+                <span
+                  style={{
+                    color: "white",
+                    fontSize: "1rem",
+                    fontWeight: "500",
+                  }}
+                >
+                  Clear Plans
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
     </div>
   );
 }
