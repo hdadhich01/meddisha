@@ -2,13 +2,13 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Page1() {
   const [insuranceNumber, setInsuranceNumber] = useState("");
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [loadingStep, setLoadingStep] = useState(0);
-  const [showSuccess, setShowSuccess] = useState(false);
   const [insuranceCompleted, setInsuranceCompleted] = useState(false);
   const [fileCompleted, setFileCompleted] = useState(false);
 
@@ -133,7 +133,7 @@ export default function Page1() {
             </h1>
           </Link>
           <p style={{ fontSize: "1.125rem", color: "white" }}>
-            Let's get started with your medical information
+            Let&apos;s get started with your medical information
           </p>
         </div>
 
@@ -155,7 +155,7 @@ export default function Page1() {
                   marginBottom: "0.5rem",
                 }}
               >
-                Patient's Insurance Number
+                Patient&apos;s Insurance Number
               </label>
               <input
                 type="text"
@@ -243,9 +243,11 @@ export default function Page1() {
                         }}
                       >
                         <span>You have</span>
-                        <img
+                        <Image
                           src="https://upload.wikimedia.org/wikipedia/en/thumb/2/29/UnitedHealthcare_%28logo%29.svg/2560px-UnitedHealthcare_%28logo%29.svg.png"
                           alt="UnitedHealthCare"
+                          width={100}
+                          height={40}
                           style={{
                             height: "1rem",
                             width: "auto",

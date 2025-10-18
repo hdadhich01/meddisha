@@ -108,7 +108,7 @@ export default function Page3() {
           marginBottom: "2rem",
         }}
       >
-        {clinicalTrials.map((trial, index) => (
+        {clinicalTrials.map((trial) => (
           <div
             key={trial.id}
             style={{

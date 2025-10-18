@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Page2() {
   const [patientInput, setPatientInput] = useState("");
@@ -152,9 +153,11 @@ export default function Page2() {
                 >
                   {loadingStep === 0 && (
                     <>
-                      <img
+                      <Image
                         src="https://upload.wikimedia.org/wikipedia/en/thumb/2/29/UnitedHealthcare_%28logo%29.svg/2560px-UnitedHealthcare_%28logo%29.svg.png"
                         alt="UHC"
+                        width={100}
+                        height={40}
                         style={{
                           height: "1.5rem",
                           width: "auto",
@@ -166,9 +169,11 @@ export default function Page2() {
                   )}
                   {loadingStep === 4 && (
                     <>
-                      <img
+                      <Image
                         src="https://cdn.creazilla.com/cliparts/7826906/nih-2012-logo-arrow-clipart-xl.png"
                         alt="NIH"
+                        width={100}
+                        height={40}
                         style={{
                           height: "1.5rem",
                           width: "auto",
