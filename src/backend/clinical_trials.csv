@@ -1,0 +1,43 @@
+nct_number,study_status,conditions,age_group,sex,phases,enrollment,study_url,trial_content
+NCT02993406,COMPLETED,Cardiovascular Diseases|Statin Adverse Reaction,"ADULT, OLDER_ADULT",ALL,PHASE3,13970,https://clinicaltrials.gov/study/NCT02993406,"Study Title: Evaluation of Major Cardiovascular Events in Participants With, or at High Risk for, Cardiovascular Disease Who Are Statin Intolerant (CLEAR Outcomes)
+Brief Summary: The purpose of this study is to determine if treatment with bempedoic acid (ETC-1002) versus placebo decreases the risk of cardiovascular events in participants who have or are at high risk for cardiovascular disease and are statin intolerant.
+Conditions: Cardiovascular Diseases|Statin Adverse Reaction
+Interventions: Drug: Bempedoic Acid 180 mg tablet|Drug: Placebo
+Primary Outcome Measures: Time From Randomization to First Occurrence of Any Component of the Primary Composite Endpoint (Cardiovascular Death, Non-fatal Myocardial Infarction, Non-fatal Stroke, Coronary Revascularization)
+Secondary Outcome Measures: Time From Randomization to First Occurrence of Cardiovascular Death, Non-fatal Myocardial Infarction, or Non-fatal Stroke | Time From Randomization to First Occurrence of Cardiovascular Death or Non-fatal Myocardial Infarction | Fatal and Non-fatal Myocardial Infarction | Fatal and Non-fatal Stroke | Coronary Revascularization | Cardiovascular Mortality | All-Cause Mortality
+Eligibility: Age ADULT, OLDER_ADULT, Sex ALL"
+NCT02692716,COMPLETED,Diabetes,"ADULT, OLDER_ADULT",ALL,PHASE3,3297,https://clinicaltrials.gov/study/NCT02692716,"Study Title: A Trial Investigating the Cardiovascular Safety of Oral Semaglutide in Subjects With Type 2 Diabetes (PIONEER 6)
+Brief Summary: This trial is conducted globally. The purpose of the trial is to investigate the cardiovascular safety of oral semaglutide in subjects with type 2 diabetes.
+Conditions: Diabetes
+Interventions: Drug: semaglutide|Drug: placebo
+Primary Outcome Measures: Number of Primary Composite Cardiovascular (CV) Events
+Secondary Outcome Measures: Time to First Occurrence of the Primary Composite CV Endpoint | Number of the Individual Components of the Primary Composite Endpoint | Number of Deaths | Number of Extended Composite CV Events | Number of the Individual Components of the Extended Composite Endpoint
+Eligibility: Age ADULT, OLDER_ADULT, Sex ALL"
+NCT05488431,RECRUITING,Dyslipidemias,"ADULT, OLDER_ADULT",ALL,PHASE2,380,https://clinicaltrials.gov/study/NCT05488431,"Study Title: Cholesterol and Inflammation Lowering Via Bempedoic Acid, an ATP Citrate Lyase (ACL)-Inhibiting Regimen-2 (CLEAR-2)
+Brief Summary: Certain genes are associated with increased risk of heart disease. The purpose of this study is to determine whether lowering both cholesterol and inflammation with bempedoic acid compared to placebo will reduce atherosclerotic plaque and inflammation in coronary arteries as measured by cardiac computed tomography angiography (CCTA).
+Conditions: Dyslipidemias
+Interventions: Drug: Bempedoic Acid 180 mg|Other: Placebo
+Primary Outcome Measures: Change in Pericoronary Adipose Tissue (PCAT) Attenuation on CCTA | Change in Non-calcified Plaque Volume on CCTA | Change in Low Attenuation Plaque (LAP) Volume on CCTA | Change in High-risk Plaque Features on CCTA
+Secondary Outcome Measures: Multiple cardiovascular and metabolic measures
+Eligibility: Age ADULT, OLDER_ADULT, Sex ALL"
+NCT06103305,NOT_YET_RECRUITING,"Arrhythmias, Cardiac","ADULT, OLDER_ADULT",ALL,N/A,300,https://clinicaltrials.gov/study/NCT06103305,"Study Title: Risk Stratifications for Patients With Palpitations
+Brief Summary: The goal of this observational study is to develop a multimodal framework for risk stratifying patients who experience palpitations by incorporating clinical, imaging, and wearable-based data. The main question it aims to answer is whether this framework can improve the diagnostic approach to palpitations.
+Conditions: Arrhythmias, Cardiac
+Interventions: None specified
+Primary Outcome Measures: Diagnosis of arrhythmia | Time to arrhythmia diagnosis | Composite adverse cardiovascular outcome
+Secondary Outcome Measures: Frequency and duration of arrhythmia episodes | Healthcare utilization patterns | Quality of life measures
+Eligibility: Age ADULT, OLDER_ADULT, Sex ALL"
+NCT06690333,RECRUITING,Pacemaker Implantation,"ADULT, OLDER_ADULT",ALL,NA,420,https://clinicaltrials.gov/study/NCT06690333,"Study Title: Efficacy and Safety of Leadless Pacemakers Versus Left Bundle Area Pacing in Patients With Atrioventricular Block (MicroPort CRM Versus Medtronic Micra)
+Brief Summary: The purpose of this study is to compare the efficacy and safety of leadless pacemakers versus left bundle branch area pacing in patients with atrioventricular block requiring ventricular pacing.
+Conditions: Pacemaker Implantation
+Interventions: Device: Leadless pacemaker (Micra AV or Micra VR)|Device: Left bundle branch area pacing system
+Primary Outcome Measures: Freedom from system-related complications | Pacing parameters at 12 months
+Secondary Outcome Measures: Freedom from lead-related complications | QRS duration | Echocardiographic parameters | Quality of life
+Eligibility: Age ADULT, OLDER_ADULT, Sex ALL"
+NCT05438862,RECRUITING,Aortic Valve Regurgitation,"ADULT, OLDER_ADULT",ALL,NA,356,https://clinicaltrials.gov/study/NCT05438862,"Study Title: Early Aortic vaLve surgEry Versus wAtchful waitiNg Strategy in Severe Asymptomatic Aortic Regurgitation
+Brief Summary: The purpose of this study is to determine whether early aortic valve surgery compared to watchful waiting improves clinical outcomes in patients with severe asymptomatic aortic regurgitation.
+Conditions: Aortic Valve Regurgitation
+Interventions: Procedure: Early aortic valve surgery|Other: Watchful waiting with regular monitoring
+Primary Outcome Measures: Composite of all-cause mortality and heart failure hospitalization
+Secondary Outcome Measures: All-cause mortality | Cardiovascular mortality | Heart failure hospitalization | Quality of life | Exercise capacity | Left ventricular parameters
+Eligibility: Age ADULT, OLDER_ADULT, Sex ALL"
