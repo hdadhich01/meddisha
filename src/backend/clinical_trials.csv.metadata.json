@@ -1,0 +1,46 @@
+{
+  "metadataAttributes": {
+    "data_source": "clinicaltrials_gov",
+    "last_updated": "2025-10-17",
+    "data_type": "clinical_trials"
+  },
+  "documentStructureConfiguration": {
+    "type": "RECORD_BASED_STRUCTURE_METADATA",
+    "recordBasedStructureMetadata": {
+      "contentFields": [
+        {
+          "fieldName": "trial_content"
+        }
+      ],
+      "metadataFieldsSpecification": {
+        "fieldsToInclude": [
+          {
+            "fieldName": "nct_number"
+          },
+          {
+            "fieldName": "study_status"
+          },
+          {
+            "fieldName": "conditions"
+          },
+          {
+            "fieldName": "age_group"
+          },
+          {
+            "fieldName": "sex"
+          },
+          {
+            "fieldName": "phases"
+          },
+          {
+            "fieldName": "enrollment"
+          },
+          {
+            "fieldName": "study_url"
+          }
+        ],
+        "fieldsToExclude": []
+      }
+    }
+  }
+}
