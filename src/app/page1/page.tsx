@@ -9,6 +9,7 @@ export default function Page1() {
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [loadingStep, setLoadingStep] = useState(0);
+  const [showSuccess, setShowSuccess] = useState(false);
   const [insuranceCompleted, setInsuranceCompleted] = useState(false);
   const [fileCompleted, setFileCompleted] = useState(false);
 
